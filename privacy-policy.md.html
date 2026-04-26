@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - QA Snapshot Extension</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #1a73e8;
+        }
+        h1 {
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .badge {
+            background: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .yes {
+            color: green;
+            font-weight: bold;
+        }
+        .no {
+            color: red;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy for QA Snapshot Extension</h1>
+<div class="last-updated">Last Updated: April 26, 2026</div>
+
+<p>This privacy policy describes how the QA Snapshot browser extension ("we", "our", "the extension") handles user data. Your privacy is important to us, and we are committed to transparency.</p>
+
+<div class="badge">
+    <strong>📢 Summary:</strong> The QA Snapshot extension collects NO personal data. All captured website content stays locally in YOUR browser. Nothing is sent to any server.
+</div>
+
+<h2>1. What Data Does This Extension Collect?</h2>
+
+<p>The extension collects <strong>WEBSITE CONTENT</strong> only when you explicitly click the capture buttons. This includes:</p>
+
+<table>
+    <tr>
+        <th>Data Type</th>
+        <th>Collected?</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Personally Identifiable Information</td>
+        <td class="no">❌ NO</td>
+        <td>No names, addresses, emails, phone numbers, or ID numbers</td>
+    </tr>
+    <tr>
+        <td>Health Information</td>
+        <td class="no">❌ NO</td>
+        <td>No medical or health data</td>
+    </tr>
+    <tr>
+        <td>Financial & Payment Information</td>
+        <td class="no">❌ NO</td>
+        <td>No credit card numbers, bank details, or payment history</td>
+    </tr>
+    <tr>
+        <td>Authentication Information</td>
+        <td class="no">❌ NO</td>
+        <td>No passwords, credentials, or PINs</td>
+     </tr>
+    <tr>
+        <td>Personal Communications</td>
+        <td class="no">❌ NO</td>
+        <td>No emails, messages, or chat content</td>
+     </tr>
+    <tr>
+        <td>Location Data</td>
+        <td class="no">❌ NO</td>
+        <td>No GPS, IP tracking, or geolocation</td>
+     </tr>
+    <tr>
+        <td>Web History</td>
+        <td class="no">❌ NO</td>
+        <td>No browsing history or visited pages list</td>
+     </tr>
+    <tr>
+        <td>User Activity</td>
+        <td class="no">❌ NO</td>
+        <td>No click tracking, mouse position, scroll, or keystroke logging</td>
+     </tr>
+    <tr>
+        <td><strong>Website Content</strong></td>
+        <td class="yes">✅ YES</td>
+        <td>DOM structure, element positions, styles, text, attributes, and localStorage/sessionStorage from pages you test</td>
+     </tr>
+</table>
+
+<h2>2. How Is Website Content Collected?</h2>
+
+<p>The extension only captures website content when YOU explicitly take action:</p>
+
+<ul>
+    <li>You click <strong>"Capture Baseline"</strong> - saves current page state</li>
+    <li>You click <strong>"Capture Test"</strong> - saves another page state for comparison</li>
+    <li>You click <strong>"Compare"</strong> - analyzes differences between snapshots</li>
+    <li>You click <strong>"Highlight on Page"</strong> - shows visual overlay</li>
+</ul>
+
+<p><strong>No automatic or background collection occurs.</strong> The extension does not run until you click its icon.</p>
+
+<h2>3. How Is Collected Data Used?</h2>
+
+<p>The collected website content is used for ONE purpose only: <strong>visual and DOM regression testing</strong>.</p>
+
+<p>Specifically, the extension uses the data to:</p>
+<ul>
+    <li>Compare "before" (baseline) and "after" (test) snapshots</li>
+    <li>Generate diff reports showing what changed, moved, or disappeared</li>
+    <li>Display colored overlays on the webpage to highlight differences</li>
+    <li>Export snapshots as JSON (only if you click the export button)</li>
+</ul>
+
+<p>The extension does NOT use the data for any other purpose, including advertising, analytics, or user profiling.</p>
+
+<h2>4. Where Is Data Stored?</h2>
+
+<p><strong>All data stays in YOUR browser. Nothing is sent to external servers.</strong></p>
+
+<p>Data is stored locally using Chrome's built-in storage APIs:</p>
+<ul>
+    <li><strong>IndexedDB</strong> - Stores snapshots (baselines and test captures)</li>
+    <li><strong>chrome.storage.local</strong> - Stores extension settings (ignore rules, preferences)</li>
+</ul>
+
+<h2>5. Is Data Shared With Third Parties?</h2>
+
+<p><strong>NO. We do not sell, rent, transfer, or share any data with third parties.</strong></p>
+
+<p>The extension makes zero external network requests for data transmission. No servers, no APIs, no analytics platforms, no third-party services.</p>
+
+<p>The only exception is if YOU choose to:</p>
+<ul>
+    <li><strong>Export a snapshot as JSON</strong> - The file saves to your local computer. You decide if and where to share it.</li>
+    <li><strong>Import a snapshot from JSON</strong> - You load a file you already have.</li>
+</ul>
+
+<p>Even these actions are fully user-initiated and local-only.</p>
+
+<h2>6. How Long Is Data Retained?</h2>
+
+<p>Data is retained until YOU delete it:</p>
+<ul>
+    <li>You can delete individual snapshots anytime via the extension popup</li>
+    <li>You can clear all snapshots from the settings menu</li>
+    <li><strong>Uninstalling the extension removes ALL stored data</strong></li>
+</ul>
+
+<p>No automatic expiration or data retention beyond what you choose.</p>
+
+<h2>7. Data Transfers & International Users</h2>
+
+<p>Since no data leaves your browser, there are no cross-border data transfers. The extension works the same regardless of your location.</p>
+
+<h2>8. Children's Privacy</h2>
+
+<p>The extension is not intended for children under 13. We do not knowingly collect any information from children. If you believe a child has used this extension, simply uninstall it - all data will be removed.</p>
+
+<h2>9. Changes to This Privacy Policy</h2>
+
+<p>If we update this privacy policy, the "Last Updated" date at the top will change. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+<h2>10. Your Rights & Control</h2>
+
+<p>You have full control over your data:</p>
+<ul>
+    <li>✅ <strong>Access</strong> - View all saved snapshots in the extension popup</li>
+    <li>✅ <strong>Delete</strong> - Remove any snapshot individually or all at once</li>
+    <li>✅ <strong>Export</strong> - Save snapshots as JSON files to your computer</li>
+    <li>✅ <strong>Opt-out</strong> - Uninstall the extension removes all data</li>
+</ul>
+
+<h2>11. Permissions Justification</h2>
+
+<p>The extension requires certain permissions to function. Here's why each is needed and how it relates to data collection:</p>
+
+<table>
+    <tr>
+        <th>Permission</th>
+        <th>Why Needed</th>
+        <th>Data Access</th>
+    </tr>
+    <tr>
+        <td>activeTab</td>
+        <td>Temporary access to current page when you click capture</td>
+        <td>Reads DOM for snapshot (user-initiated only)</td>
+     </tr>
+    <tr>
+        <td>storage</td>
+        <td>Saves snapshots and settings locally</td>
+        <td>Writes to browser storage (no external access)</td>
+     </tr>
+    <tr>
+        <td>scripting</td>
+        <td>Injects visual overlay to highlight changes</td>
+        <td>Draws colored boxes on page (no data collection)</td>
+     </tr>
+    <tr>
+        <td>cookies</td>
+        <td>Optional - reads cookies only if user enables feature</td>
+        <td>Reads cookie values for UI state testing</td>
+     </tr>
+    <tr>
+        <td>host_permissions</td>
+        <td>Allows testing on any website user chooses</td>
+        <td>Access only when you click extension icon</td>
+     </tr>
+</table>
+
+<h2>12. No Remote Code</h2>
+
+<p>The extension does NOT execute any remote code. All JavaScript, CSS, and HTML files are packaged locally in the extension. No external scripts are loaded from CDNs or servers. This ensures that:</p>
+<ul>
+    <li>No third-party code can access your data</li>
+    <li>The extension works offline</li>
+    <li>You can audit the code yourself</li>
+</ul>
+
+<h2>13. Security</h2>
+
+<p>Since all data stays in your browser, we rely on Chrome's built-in security model. The extension:</p>
+<ul>
+    <li>Uses Chrome's storage APIs with standard encryption-at-rest</li>
+    <li>Does not create any external network connections</li>
+    <li>Does not use eval() or dynamic code execution</li>
+    <li>Follows Chrome Web Store security requirements</li>
+</ul>
+
+<h2>14. Contact Information</h2>
+
+<p>If you have questions about this privacy policy, contact:</p>
+<p>
+<strong>Email:</strong> privacy@yourcompany.com<br>
+<strong>GitHub:</strong> https://github.com/yourusername/qa-snapshot-extension<br>
+</p>
+
+<h2>15. Compliance Statements</h2>
+
+<p>We certify that:</p>
+<ul>
+    <li>✅ We do not sell or transfer user data to third parties</li>
+    <li>✅ We do not use user data for purposes unrelated to the extension's single purpose (UI regression testing)</li>
+    <li>✅ We do not use user data for creditworthiness or lending purposes</li>
+    <li>✅ We comply with Chrome Web Store Developer Program Policies</li>
+</ul>
+
+<footer>
+    <p>© 2026 QA Snapshot Extension. All rights reserved.</p>
+    <p>This extension is provided "as is" without warranties. Users are responsible for compliance with their own organization's data policies.</p>
+</footer>
+
+</body>
+</html>
